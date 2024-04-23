@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"British 10 Year Gilt",
+    "subtitle": ["Yield %", "Source: BoE Through ECO API"]
+  },
+
+  "width": 400,
+  "height": 300,
+  "data": {"url": "https://api.economicsobservatory.com/gbr/intr?vega"},
+
+  "mark": "line",
+
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "value", "type": "quantitative", "title":null}
+  }
+}
